@@ -1,6 +1,9 @@
+import * as dotenv from "dotenv";
 import express from "express";
-import { middleware, messagingApi, WebhookEvent } from "@line/bot-sdk";
 import cors from "cors";
+import { middleware, messagingApi, WebhookEvent } from "@line/bot-sdk";
+
+dotenv.config();
 
 const { MessagingApiClient } = messagingApi;
 
